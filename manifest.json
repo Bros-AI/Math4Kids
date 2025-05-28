@@ -1,0 +1,149 @@
+{
+    "name": "Kids Math Assistant - Learn Math with Fun!",
+    "short_name": "MathKids",
+    "description": "Interactive math learning app for kids with voice recognition, multiple difficulty levels, and fun achievements. Perfect for engaging math practice!",
+    "lang": "en-US",
+    "start_url": "/index.html?source=pwa",
+    "display": "standalone",
+    "display_override": [
+        "standalone",
+        "minimal-ui"
+    ],
+    "orientation": "portrait-primary",
+    "background_color": "#5A67D8",
+    "theme_color": "#667EEA",
+    "scope": "/",
+    "dir": "ltr",
+    "categories": [
+        "education",
+        "games",
+        "kids",
+        "children",
+        "math",
+        "utilities"
+    ],
+    "icons": [
+        {
+            "src": "icons/icon-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-152x152.png",
+            "sizes": "152x152",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [
+        {
+          "src": "images/screenshots/screenshot1_narrow.webp",
+          "sizes": "540x1170",
+          "type": "image/webp",
+          "form_factor": "narrow",
+          "label": "Math Problem View"
+        },
+        {
+          "src": "images/screenshots/screenshot2_narrow.webp",
+          "sizes": "540x1170",
+          "type": "image/webp",
+          "form_factor": "narrow",
+          "label": "Settings Panel"
+        },
+        {
+          "src": "images/screenshots/screenshot3_narrow.webp",
+          "sizes": "540x1170",
+          "type": "image/webp",
+          "form_factor": "narrow",
+          "label": "Achievement Unlocked"
+        },
+        {
+          "src": "images/screenshots/screenshot1_wide.webp",
+          "sizes": "1080x720",
+          "type": "image/webp",
+          "form_factor": "wide",
+          "label": "Math Problem View (Tablet)"
+        }
+    ],
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "shortcuts": [
+        {
+            "name": "Start Easy Mode",
+            "short_name": "Easy",
+            "description": "Start a new math session on Easy difficulty.",
+            "url": "/index.html?difficulty=easy&source=shortcut",
+            "icons": [{ "src": "icons/shortcut-easy.png", "sizes": "96x96", "type": "image/png"}]
+        },
+        {
+            "name": "Start Voice Mode",
+            "short_name": "Voice",
+            "description": "Start a new math session using voice input.",
+            "url": "/index.html?mode=speech&source=shortcut",
+            "icons": [{ "src": "icons/shortcut-voice.png", "sizes": "96x96", "type": "image/png" }]
+        }
+    ],
+    "protocol_handlers": [
+      {
+        "protocol": "web+mathkids",
+        "url": "/index.html?problem=%s"
+      }
+    ],
+    "share_target": {
+      "action": "/share-target/",
+      "method": "GET",
+      "enctype": "application/x-www-form-urlencoded",
+      "params": {
+        "title": "title",
+        "text": "text",
+        "url": "url"
+      }
+    },
+    "edge_side_panel": {
+       "preferred_width": 480
+    },
+    "id": "/?homescreen=1"
+}
